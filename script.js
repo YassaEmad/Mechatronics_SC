@@ -8,7 +8,6 @@ const logoutbtn = document.querySelector(".logout__btn");
 const groupnum = document.querySelector(".groupNum");
 const day = document.querySelector(".day");
 const img = document.querySelector("dotlottie-wc");
-const message = document.querySelector(".message");
 // =======================================================================================================================
 // function to change the img
 function changeLottie(url) {
@@ -21,7 +20,6 @@ function changeLottie(url) {
 // reseting login view
 function logoutview() {
   numbergroup.value = "";
-  message.style.display = "none";
   changeLottie(
     "https://lottie.host/b48fb89b-2fa0-4fbb-a64f-29b9a6dcca39/MdhLGIjqht.lottie"
   );
@@ -68,9 +66,6 @@ loginbtn.addEventListener("click", (e) => {
       "https://lottie.host/8b4f51d7-a9a4-4641-ba6c-06b29a2e2aea/5yFFCbnqUO.lottie"
     );
     //seting the error message and resetting the input field
-    setTimeout(() => {
-      message.style.display = "block";
-    }, 1000);
     numbergroup.value = "";
     numbergroup.placeholder = "Please enter 1 or 2";
   }
@@ -205,6 +200,7 @@ logoutbtn.addEventListener("click", (e) => {
     });
   }, 600);
 });
+
 
 
 
