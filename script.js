@@ -9,6 +9,20 @@ const groupnum = document.querySelector(".groupNum");
 const day = document.querySelector(".day");
 const img = document.querySelector("dotlottie-wc");
 // =======================================================================================================================
+// preload  animations
+const preload = [
+  "https://lottie.host/b48fb89b-2fa0-4fbb-a64f-29b9a6dcca39/MdhLGIjqht.lottie",
+  "https://lottie.host/8b4f51d7-a9a4-4641-ba6c-06b29a2e2aea/5yFFCbnqUO.lottie",
+];
+
+preload.forEach((url) => {
+  fetch(url)
+    .then((res) => res.blob())
+    .then(() => {
+      console.log("Preloaded:", url);
+    });
+});
+// =======================================================================================================================
 // function to change the img
 function changeLottie(url) {
   img.classList.add("fade-out");
@@ -202,6 +216,7 @@ logoutbtn.addEventListener("click", (e) => {
     });
   }, 600);
 });
+
 
 
 
