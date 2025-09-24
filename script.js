@@ -16,7 +16,7 @@ function changeLottie(url) {
   setTimeout(() => {
     img.setAttribute("src", url);
     img.classList.remove("fade-out");
-  }, 600);
+  }, 700);
 }
 // reseting login view
 function logoutview() {
@@ -203,5 +203,6 @@ logoutbtn.addEventListener("click", (e) => {
     });
   }, 600);
 });
+
 
 
