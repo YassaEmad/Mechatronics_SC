@@ -37,6 +37,16 @@ function logoutview() {
   changeLottie(
     "https://lottie.host/b48fb89b-2fa0-4fbb-a64f-29b9a6dcca39/MdhLGIjqht.lottie"
   );
+ app.classList.remove("active");
+  setTimeout(() => {
+    log.style.display = "flex";
+    nav.style.display = "block";
+    //return to the login interface
+    requestAnimationFrame(() => {
+      log.classList.remove("fade-out");
+      nav.classList.remove("fade-out");
+    });
+  }, 600);
 }
 
 //  function- renders the schedule based on the group number and the current day of the week.
@@ -204,18 +214,8 @@ const schedules = {
 logoutbtn.addEventListener("click", (e) => {
   e.preventDefault();
   logoutview();
-  app.classList.remove("active");
-
-  setTimeout(() => {
-    log.style.display = "flex";
-    nav.style.display = "block";
-    //return to the login interface
-    requestAnimationFrame(() => {
-      log.classList.remove("fade-out");
-      nav.classList.remove("fade-out");
-    });
-  }, 600);
 });
+
 
 
 
