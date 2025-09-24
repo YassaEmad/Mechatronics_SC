@@ -8,9 +8,7 @@
 @media (min-width: 992px) {
 }
 :root {
-  --color_bg_f: linear-gradient(to top left, #39b385, #9be15d);
-  --color_bg_s: linear-gradient(to top left, #e52a5a, #ff585f);
-  --color_bg_t: linear-gradient(to top left, #ffb003, #ffcb03);
+  --color_bg_f: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
   --text_color: #00004d;
 }
 * {
@@ -31,6 +29,7 @@ body {
   color: #444;
   background-color: #f3f3f3;
   padding: 2rem;
+  min-height: 100dvh;
 }
 /* ======================================================================================================================= */
 nav {
@@ -141,11 +140,12 @@ h1 {
   align-items: center;
   width: 90dvw;
   height: 6rem;
-  background-image: var(--color_bg_s);
+  background-image: var(--color_bg_f);
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
   font-size: 2rem;
   color: white;
+  font-weight: bold;
 }
 /* ======================================================================================================================= */
 
@@ -186,12 +186,16 @@ h1 {
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
   line-height: 1.5;
+  font-weight: bold;
 }
-
-
-
-
-
-
-
-
+/* ========================================================================================================================  */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: var(--text_color);
+  font-weight: bold;
+  border-top: 0.3rem solid var(--text_color);
+}
