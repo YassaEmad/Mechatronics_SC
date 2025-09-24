@@ -70,7 +70,7 @@ loginbtn.addEventListener("click", (e) => {
     //seting the error message and resetting the input field
     setTimeout(() => {
       message.style.display = "block";
-    }, 600);
+    }, 1000);
     numbergroup.value = "";
     numbergroup.placeholder = "Please enter 1 or 2";
   }
@@ -205,6 +205,7 @@ logoutbtn.addEventListener("click", (e) => {
     });
   }, 600);
 });
+
 
 
 
