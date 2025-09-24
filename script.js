@@ -7,8 +7,8 @@ const app = document.querySelector(".app");
 const logoutbtn = document.querySelector(".logout__btn");
 const groupnum = document.querySelector(".groupNum");
 const day = document.querySelector(".day");
-const anouncement = document.querySelector(".anoucement");
 // =======================================================================================================================
+//  function- renders the schedule based on the group number and the current day of the week.
 function renderSchedule(num) {
   const today = new Date().getDay();
   parent.innerHTML = "";
@@ -27,7 +27,7 @@ function renderSchedule(num) {
   }
 }
 // =======================================================================================================================
-
+//login button
 loginbtn.addEventListener("click", (e) => {
   e.preventDefault();
   const groupnumber = numbergroup.value;
@@ -36,7 +36,7 @@ loginbtn.addEventListener("click", (e) => {
   if (groupnumber === "1" || groupnumber === "2") {
     log.classList.add("fade-out");
     nav.classList.add("fade-out");
-
+    // change the login interface to the main app interface
     setTimeout(() => {
       log.style.display = "none";
       nav.style.display = "none";
@@ -45,13 +45,13 @@ loginbtn.addEventListener("click", (e) => {
       });
     }, 600);
   } else {
-    alert("Invalid Group Number,(1 or 2) only");
+    alert("Invalid Group Number ,(1 or 2) only");
   }
   renderSchedule(groupnumber);
 });
 
 // =======================================================================================================================
-
+// days of the week
 const days = [
   "Sunday",
   "Monday",
@@ -61,7 +61,7 @@ const days = [
   "Friday",
   "Saturday",
 ];
-
+//shcedules data base for different groups
 const schedules = {
   group1: {
     0: [
@@ -97,6 +97,16 @@ const schedules = {
     ],
     3: [
       // Wednesday
+      { subject: "رياضيات", doctor: "د. أحمد", place: "قاعة 101", lecture: 1 },
+      { subject: "برمجة", doctor: "د. منى", place: "معمل 3", lecture: 2 },
+      { subject: "رياضيات", doctor: "د. أحمد", place: "قاعة 101", lecture: 1 },
+      { subject: "برمجة", doctor: "د. منى", place: "معمل 3", lecture: 2 },
+      { subject: "رياضيات", doctor: "د. أحمد", place: "قاعة 101", lecture: 1 },
+      { subject: "برمجة", doctor: "د. منى", place: "معمل 3", lecture: 2 },
+      { subject: "رياضيات", doctor: "د. أحمد", place: "قاعة 101", lecture: 1 },
+      { subject: "برمجة", doctor: "د. منى", place: "معمل 3", lecture: 2 },
+      { subject: "رياضيات", doctor: "د. أحمد", place: "قاعة 101", lecture: 1 },
+      { subject: "برمجة", doctor: "د. منى", place: "معمل 3", lecture: 2 },
       { subject: "رياضيات", doctor: "د. أحمد", place: "قاعة 101", lecture: 1 },
       { subject: "برمجة", doctor: "د. منى", place: "معمل 3", lecture: 2 },
     ],
@@ -151,6 +161,7 @@ const schedules = {
 };
 
 // =======================================================================================================================
+// logout button
 logoutbtn.addEventListener("click", (e) => {
   e.preventDefault();
 
@@ -159,7 +170,7 @@ logoutbtn.addEventListener("click", (e) => {
   setTimeout(() => {
     log.style.display = "flex";
     nav.style.display = "block";
-
+    //return to the login interface
     requestAnimationFrame(() => {
       log.classList.remove("fade-out");
       nav.classList.remove("fade-out");
@@ -168,4 +179,3 @@ logoutbtn.addEventListener("click", (e) => {
 });
 
 // =======================================================================================================================
-
