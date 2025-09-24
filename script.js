@@ -16,7 +16,7 @@ function changeLottie(url) {
   setTimeout(() => {
     img.setAttribute("src", url);
     img.classList.remove("fade-out");
-  }, 600);
+  }, 1000);
 }
 // reseting login view
 function logoutview() {
@@ -62,7 +62,7 @@ loginbtn.addEventListener("click", (e) => {
       requestAnimationFrame(() => {
         app.classList.add("active");
       });
-    }, 600);
+    }, 1000);
   } else {
     changeLottie(
       "https://lottie.host/8b4f51d7-a9a4-4641-ba6c-06b29a2e2aea/5yFFCbnqUO.lottie"
@@ -205,6 +205,7 @@ logoutbtn.addEventListener("click", (e) => {
     });
   }, 600);
 });
+
 
 
 
