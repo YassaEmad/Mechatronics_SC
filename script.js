@@ -7,7 +7,26 @@ const app = document.querySelector(".app");
 const logoutbtn = document.querySelector(".logout__btn");
 const groupnum = document.querySelector(".groupNum");
 const day = document.querySelector(".day");
+const img = document.querySelector("dotlottie-wc");
+const message = document.querySelector(".message");
 // =======================================================================================================================
+// function to change the img
+function changeLottie(url) {
+  img.classList.add("fade-out");
+  setTimeout(() => {
+    img.setAttribute("src", url);
+    img.classList.remove("fade-out");
+  }, 500);
+}
+// reseting login view
+function logoutview() {
+  numbergroup.value = "";
+  message.style.display = "none";
+  changeLottie(
+    "https://lottie.host/b48fb89b-2fa0-4fbb-a64f-29b9a6dcca39/MdhLGIjqht.lottie"
+  );
+}
+
 //  function- renders the schedule based on the group number and the current day of the week.
 function renderSchedule(num) {
   const today = new Date().getDay();
@@ -45,8 +64,12 @@ loginbtn.addEventListener("click", (e) => {
       });
     }, 600);
   } else {
-    alert("Invalid Group Number ,(1 or 2) only");
+    changeLottie(
+      "https://lottie.host/8b4f51d7-a9a4-4641-ba6c-06b29a2e2aea/5yFFCbnqUO.lottie"
+    );
+    message.style.display = "block";
   }
+
   renderSchedule(groupnumber);
 });
 
@@ -164,7 +187,7 @@ const schedules = {
 // logout button
 logoutbtn.addEventListener("click", (e) => {
   e.preventDefault();
-
+  logoutview();
   app.classList.remove("active");
 
   setTimeout(() => {
