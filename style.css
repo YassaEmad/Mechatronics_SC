@@ -217,7 +217,7 @@ dotlottie-wc {
   display: block;
   margin: auto;
   opacity: 1;
-  transition: opacity 0.5s ease;
+  transition: opacity 1s ease;
 }
 @media (max-width: 600px) {
   dotlottie-wc {
@@ -234,4 +234,5 @@ dotlottie-wc {
 dotlottie-wc.fade-out {
   opacity: 0;
 }
+
 
