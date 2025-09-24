@@ -69,7 +69,7 @@ loginbtn.addEventListener("click", (e) => {
     setTimeout(() => {
       numbergroup.value = "";
       numbergroup.placeholder = "Please enter 1 or 2";
-    }, 500);
+    }, 700);
   }
 
   renderSchedule(groupnumber);
@@ -202,6 +202,7 @@ logoutbtn.addEventListener("click", (e) => {
     });
   }, 600);
 });
+
 
 
 
