@@ -16,7 +16,7 @@ function changeLottie(url) {
   setTimeout(() => {
     img.setAttribute("src", url);
     img.classList.remove("fade-out");
-  }, 1000);
+  }, 500);
 }
 // reseting login view
 function logoutview() {
@@ -70,7 +70,7 @@ loginbtn.addEventListener("click", (e) => {
     //seting the error message and resetting the input field
     setTimeout(() => {
       message.style.display = "block";
-    }, 1000);
+    }, 600);
     numbergroup.value = "";
     numbergroup.placeholder = "Please enter 1 or 2";
   }
@@ -205,6 +205,7 @@ logoutbtn.addEventListener("click", (e) => {
     });
   }, 600);
 });
+
 
 
 
