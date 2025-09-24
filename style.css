@@ -46,6 +46,11 @@ h1 {
   text-align: center;
   white-space: nowrap;
 }
+@media (max-width: 450px) {
+  h1 {
+    font-size: 2.75rem;
+  }
+}
 /* sm */
 @media (max-width: 576px) {
   h1 {
@@ -182,5 +187,6 @@ h1 {
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
   line-height: 1.5;
 }
+
 
 
