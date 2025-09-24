@@ -1,0 +1,184 @@
+/* sm */
+@media (min-width: 576px) {
+}
+/* md */
+@media (min-width: 768px) {
+}
+/* lg */
+@media (min-width: 992px) {
+}
+:root {
+  --color_bg_f: linear-gradient(to top left, #39b385, #9be15d);
+  --color_bg_s: linear-gradient(to top left, #e52a5a, #ff585f);
+  --color_bg_t: linear-gradient(to top left, #ffb003, #ffcb03);
+  --text_color: #00004d;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #444;
+  background-color: #f3f3f3;
+  padding: 2rem;
+}
+/* ======================================================================================================================= */
+nav {
+  transition: opacity 0.6s ease;
+  opacity: 1;
+}
+nav.fade-out {
+  opacity: 0;
+}
+
+h1 {
+  color: var(--text_color);
+  text-align: center;
+  white-space: nowrap;
+}
+/* sm */
+@media (min-width: 576px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+/* md */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+/* ======================================================================================================================= */
+.login_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  transition: opacity 0.6s ease;
+  opacity: 1;
+}
+.login_section.fade-out {
+  opacity: 0;
+}
+
+.login_section .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100dvw;
+  height: 65dvh;
+}
+/* ======================================================================================================================= */
+.loginForm {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.groupNumber {
+  width: 100%;
+  border: var(--text_color) solid 0.3rem;
+  background-color: white;
+  font-family: inherit;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #333;
+  padding: 0.3rem 1rem;
+  border-radius: 0.7rem;
+}
+.groupNumber:focus {
+  outline: none;
+  background-color: white;
+}
+.login__btn {
+  border: none;
+  background: none;
+  font-size: 3.2rem;
+  color: var(--text_color);
+  cursor: pointer;
+}
+.login__btn:hover,
+.login__btn:focus {
+  color: #777;
+}
+/* ======================================================================================================================= */
+.app {
+  /* display: none; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.6s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.app.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ======================================================================================================================= */
+.info {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 90dvw;
+  height: 6rem;
+  background-image: var(--color_bg_s);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  font-size: 2rem;
+  color: white;
+}
+/* ======================================================================================================================= */
+
+.logout__btn {
+  border: none;
+  background: transparent;
+  font-size: 3.2rem;
+  color: white;
+  cursor: pointer;
+}
+.logout__btn:hover,
+.logout__btn:focus {
+  color: var(--text_color);
+}
+
+/* ======================================================================================================================= */
+.parent {
+  width: 90dvw;
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto-fit, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+@media (max-width: 576px) {
+  .parent {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
+  }
+}
+.card {
+  background-image: var(--color_bg_f);
+  width: 100%;
+  font-size: 2rem;
+  color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  line-height: 1.5;
+}
