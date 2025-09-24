@@ -33,7 +33,7 @@ function changeLottie(url) {
 }
 // reseting login view
 function logoutview() {
-  numbergroup.value = "Enter group number";
+  numbergroup.value = "";
   changeLottie(
     "https://lottie.host/b48fb89b-2fa0-4fbb-a64f-29b9a6dcca39/MdhLGIjqht.lottie"
   );
@@ -92,7 +92,7 @@ loginbtn.addEventListener("click", (e) => {
     changeLottie(
       "https://lottie.host/8b4f51d7-a9a4-4641-ba6c-06b29a2e2aea/5yFFCbnqUO.lottie"
     );
-    numbergroup.value = "Enter group number";
+    numbergroup.value = "";
     //seting the error message and resetting the input field
     setTimeout(() => {
       numbergroup.value = "";
@@ -219,6 +219,7 @@ logoutbtn.addEventListener("click", (e) => {
   e.preventDefault();
   logoutview();
 });
+
 
 
 
