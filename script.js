@@ -45,7 +45,7 @@ loginbtn.addEventListener("click", (e) => {
       });
     }, 600);
   } else {
-    alert("Invalid Group Number");
+    alert("Invalid Group Number,(1 or 2) only");
   }
   renderSchedule(groupnumber);
 });
@@ -168,3 +168,4 @@ logoutbtn.addEventListener("click", (e) => {
 });
 
 // =======================================================================================================================
+
