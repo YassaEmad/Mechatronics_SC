@@ -67,7 +67,10 @@ loginbtn.addEventListener("click", (e) => {
     changeLottie(
       "https://lottie.host/8b4f51d7-a9a4-4641-ba6c-06b29a2e2aea/5yFFCbnqUO.lottie"
     );
+    //seting the error message and resetting the input field
     message.style.display = "block";
+    numbergroup.value = "";
+    numbergroup.placeholder = "Please enter 1 or 2";
   }
 
   renderSchedule(groupnumber);
@@ -201,4 +204,3 @@ logoutbtn.addEventListener("click", (e) => {
   }, 600);
 });
 
-// =======================================================================================================================
