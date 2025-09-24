@@ -85,6 +85,9 @@ loginbtn.addEventListener("click", (e) => {
         app.classList.add("active");
       });
     }, 600);
+    changeLottie(
+      "https://lottie.host/b48fb89b-2fa0-4fbb-a64f-29b9a6dcca39/MdhLGIjqht.lottie"
+    );
   } else {
     changeLottie(
       "https://lottie.host/8b4f51d7-a9a4-4641-ba6c-06b29a2e2aea/5yFFCbnqUO.lottie"
@@ -215,6 +218,7 @@ logoutbtn.addEventListener("click", (e) => {
   e.preventDefault();
   logoutview();
 });
+
 
 
 
