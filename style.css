@@ -201,15 +201,6 @@ footer {
 }
 
 /* ========================================================================================================================  */
-.message {
-  color: var(--text_color);
-  font-size: 2rem;
-  font-weight: bold;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  text-align: center;
-  display: none;
-}
 dotlottie-wc {
   width: 350px;
   height: 350px;
@@ -234,6 +225,7 @@ dotlottie-wc {
 dotlottie-wc.fade-out {
   opacity: 0;
 }
+
 
 
 
