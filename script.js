@@ -162,6 +162,15 @@ const schedules = {
       { subject: "برمجة", doctor: "د. منى", place: "معمل 3", lecture: 2 },
       { subject: "رياضيات", doctor: "د. أحمد", place: "قاعة 101", lecture: 1 },
       { subject: "برمجة", doctor: "د. منى", place: "معمل 3", lecture: 2 },
+    ],4: [
+      // Sunday
+      { subject: "رياضيات", doctor: "د. أحمد", place: "قاعة 101", lecture: 1 },
+      { subject: "برمجة", doctor: "د. منى", place: "معمل 3", lecture: 2 },
+    ],
+     5: [
+      // Sunday
+      { subject: "رياضيات", doctor: "د. أحمد", place: "قاعة 101", lecture: 1 },
+      { subject: "برمجة", doctor: "د. منى", place: "معمل 3", lecture: 2 },
     ],
   },
 
@@ -209,6 +218,15 @@ const schedules = {
         time: "11-12",
         place: "قاعة 303",
       },
+    ],4: [
+      // Sunday
+      { subject: "رياضيات", doctor: "د. أحمد", place: "قاعة 101", lecture: 1 },
+      { subject: "برمجة", doctor: "د. منى", place: "معمل 3", lecture: 2 },
+    ],
+     5: [
+      // Sunday
+      { subject: "رياضيات", doctor: "د. أحمد", place: "قاعة 101", lecture: 1 },
+      { subject: "برمجة", doctor: "د. منى", place: "معمل 3", lecture: 2 },
     ],
   },
 };
