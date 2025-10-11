@@ -117,7 +117,7 @@ const days = [
 //shcedules data base for different groups
 const schedules = {
   group1: {
-    0: [
+    6: [
       // Sunday
       { subject: "رياضيات", doctor: "د. أحمد", place: "قاعة 101", lecture: 1 },
       { subject: "برمجة", doctor: "د. منى", place: "معمل 3", lecture: 2 },
@@ -166,7 +166,7 @@ const schedules = {
       // Friday
       { subject: "راحة", doctor: "-", place: "-", lecture: "-" },
     ],
-    6: [
+    0: [
       // Saturday (New Data)
       {
         subject: "Electrical Machines",
@@ -203,7 +203,7 @@ const schedules = {
   },
 
   group2: {
-    0: [
+    6: [
       // Sunday
       { subject: "كيمياء", doctor: "د. فاطمة", place: "قاعة 201", lecture: 1 },
       { subject: "تحكم آلي", doctor: "د. ياسر", place: "قاعة 104", lecture: 2 },
@@ -239,7 +239,7 @@ const schedules = {
       // Friday
       { subject: "راحة", doctor: "-", place: "-", lecture: "-" },
     ],
-    6: [
+    0: [
       // Saturday (New Data)
       {
         subject: "Control",
@@ -284,6 +284,7 @@ logoutbtn.addEventListener("click", (e) => {
   e.preventDefault();
   logoutview();
 });
+
 
 
 
