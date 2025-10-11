@@ -135,16 +135,16 @@ const schedules = {
       // Tuesday
       {
         subject: "إلكترونيات",
-        lecture: 5555,
+        lecture: 1,
         doctor: "د. محمد",
-        time: "10-11",
+        time: "10:00-11:00",
         place: "قاعة 303",
       },
       {
         subject: "إحصاء",
         lecture: 2,
         doctor: "د. سامية",
-        time: "10-11",
+        time: "11:00-12:00",
         place: "قاعة 105",
       },
     ],
@@ -152,25 +152,53 @@ const schedules = {
       // Wednesday
       { subject: "رياضيات", doctor: "د. أحمد", place: "قاعة 101", lecture: 1 },
       { subject: "برمجة", doctor: "د. منى", place: "معمل 3", lecture: 2 },
-      { subject: "رياضيات", doctor: "د. أحمد", place: "قاعة 101", lecture: 1 },
-      { subject: "برمجة", doctor: "د. منى", place: "معمل 3", lecture: 2 },
-      { subject: "رياضيات", doctor: "د. أحمد", place: "قاعة 101", lecture: 1 },
-      { subject: "برمجة", doctor: "د. منى", place: "معمل 3", lecture: 2 },
-      { subject: "رياضيات", doctor: "د. أحمد", place: "قاعة 101", lecture: 1 },
-      { subject: "برمجة", doctor: "د. منى", place: "معمل 3", lecture: 2 },
-      { subject: "رياضيات", doctor: "د. أحمد", place: "قاعة 101", lecture: 1 },
-      { subject: "برمجة", doctor: "د. منى", place: "معمل 3", lecture: 2 },
-      { subject: "رياضيات", doctor: "د. أحمد", place: "قاعة 101", lecture: 1 },
-      { subject: "برمجة", doctor: "د. منى", place: "معمل 3", lecture: 2 },
-    ],4: [
-      // Sunday
-      { subject: "رياضيات", doctor: "د. أحمد", place: "قاعة 101", lecture: 1 },
-      { subject: "برمجة", doctor: "د. منى", place: "معمل 3", lecture: 2 },
     ],
-     5: [
-      // Sunday
-      { subject: "رياضيات", doctor: "د. أحمد", place: "قاعة 101", lecture: 1 },
-      { subject: "برمجة", doctor: "د. منى", place: "معمل 3", lecture: 2 },
+    4: [
+      // Thursday
+      {
+        subject: "دوائر كهربائية",
+        doctor: "د. علي",
+        place: "قاعة 202",
+        lecture: 1,
+      },
+    ],
+    5: [
+      // Friday
+      { subject: "راحة", doctor: "-", place: "-", lecture: "-" },
+    ],
+    6: [
+      // Saturday (New Data)
+      {
+        subject: "Electrical Machines",
+        doctor: "Dr. Mohamed Magdy",
+        time: "10:20-12:00",
+        place: "C202 SSP Building",
+        lecture: 1,
+      },
+      {
+        subject: "Signals",
+        doctor: "Dr. Ahmed ElTrass",
+        time: "02:00-04:30",
+        place: "C101 SSP Building",
+        lecture: 2,
+      },
+      // Section 1
+      {
+        subject: "Signals Lab (Section 1)",
+        time: "12:10-01:50",
+        place: "_",
+      },
+      // Section 2
+      {
+        subject: "Electrical Machines Tut (Section 2)",
+        time: "09:00-10:10",
+        place: "Machines Lab Electricity Building 1st Floor",
+      },
+      {
+        subject: "Signals Lab (Section 2)",
+        time: "12:10-01:50",
+        place: "Lab8 Electricity Building 3rd Floor",
+      },
     ],
   },
 
@@ -195,38 +223,57 @@ const schedules = {
         subject: "إلكترونيات",
         lecture: 3,
         doctor: "د. محمد",
-        time: "11-12",
+        time: "11:00-12:00",
         place: "قاعة 303",
       },
     ],
     3: [
-      // Tuesday
-      {
-        subject: "إلكترونيات",
-        lecture: 3,
-        doctor: "د. محمد",
-        time: "11-12",
-        place: "قاعة 303",
-      },
+      // Wednesday
+      { subject: "راحة", doctor: "-", place: "-", lecture: "-" },
     ],
     4: [
-      // Tuesday
-      {
-        subject: "إلكترونيات",
-        lecture: 3,
-        doctor: "د. محمد",
-        time: "11-12",
-        place: "قاعة 303",
-      },
-    ],4: [
-      // Sunday
-      { subject: "رياضيات", doctor: "د. أحمد", place: "قاعة 101", lecture: 1 },
-      { subject: "برمجة", doctor: "د. منى", place: "معمل 3", lecture: 2 },
+      // Thursday
+      { subject: "راحة", doctor: "-", place: "-", lecture: "-" },
     ],
-     5: [
-      // Sunday
-      { subject: "رياضيات", doctor: "د. أحمد", place: "قاعة 101", lecture: 1 },
-      { subject: "برمجة", doctor: "د. منى", place: "معمل 3", lecture: 2 },
+    5: [
+      // Friday
+      { subject: "راحة", doctor: "-", place: "-", lecture: "-" },
+    ],
+    6: [
+      // Saturday (New Data)
+      {
+        subject: "Control",
+        doctor: "Dr. Osama",
+        time: "10:20-12:00",
+        place: "C403 SSP Building",
+        lecture: 1,
+      },
+      {
+        subject: "Electrical Machines",
+        doctor: "Dr. Mohamed Magdy",
+        time: "12:10-01:50",
+        place: "C202 SSP Building",
+        lecture: 2,
+      },
+      {
+        subject: "Signals",
+        doctor: "Dr. Ahmed ElTrass",
+        time: "04:30-07:20",
+        place: "C101 SSP Building",
+        lecture: 3,
+      },
+      // Section 1
+      {
+        subject: "Signals Lab (Section 1)",
+        time: "02:00-03:40",
+        place: "Lab1 Electricity Building 3rd Floor",
+      },
+      // Section 2
+      {
+        subject: "Signals Lab (Section 2)",
+        time: "02:00-03:40",
+        place: "Lab8 Electricity Building 3rd Floor",
+      },
     ],
   },
 };
@@ -237,6 +284,7 @@ logoutbtn.addEventListener("click", (e) => {
   e.preventDefault();
   logoutview();
 });
+
 
 
 
